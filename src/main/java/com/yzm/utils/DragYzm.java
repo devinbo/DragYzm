@@ -162,7 +162,7 @@ public class DragYzm {
         this.location_y = random.nextInt(height - tailoring_h);
         //裁剪小图
         BufferedImage sourceSmall = cutImg(file, location_x, location_y, tailoring_w, tailoring_h);
-
+        //创建shape区域
         List<Shape> shapes = createSmallShape();
         Shape area = shapes.get(0);
         Shape bigarea = shapes.get(1);
